@@ -11,12 +11,12 @@
 <template>
     <div class="grid lg:flex lg:justifybetween lg:content-start">
         <div class="flex gap-6 mr-[88px] lg:flex-col">
-            <img class="w-[134px] h-[143px]" src="../assets/barney-pdt-details-img-one.png" alt="barney - product details image" />
-            <img class="w-[134px] h-[143px]" src="../assets/barney-pdt-details-img-two.png" alt="barney - product details image" />
-            <img class="w-[134px] h-[143px]" src="../assets/barney-pdt-details-img-three.png" alt="barney - product details image" />
+            <img class="w-[134px] h-[143px]" src="https://res.cloudinary.com/odumz/image/upload/v1624959118/samples/ecommerce/accessories-bag.jpg" alt="barney - product details image" />
+            <img class="w-[134px] h-[143px]" src="https://res.cloudinary.com/odumz/image/upload/v1624959118/samples/ecommerce/accessories-bag.jpg" alt="barney - product details image" />
+            <img class="w-[134px] h-[143px]" src="https://res.cloudinary.com/odumz/image/upload/v1624959118/samples/ecommerce/accessories-bag.jpg" alt="barney - product details image" />
         </div>
         <div class="mr-[31px]">
-            <img class="w-[578px] object-cover h-[603px]" src="../assets/barney-pdt-details-img-main.png" alt="barney - product details image" />
+            <img class="w-[578px] object-cover h-[603px]" src="https://res.cloudinary.com/odumz/image/upload/v1624959118/samples/ecommerce/accessories-bag.jpg" alt="barney - product details image" />
         </div>
         <div class="grid content-start">
             <div class="flex items-center gap-5 text-grey mb-[50px] justify-start">

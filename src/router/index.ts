@@ -16,149 +16,15 @@ const routes: Array<RouteRecordRaw> = [
         meta: { requiresAuth: false },
       },
       {
-        path : 'auth',
-        name: 'Auth',
-        meta: { requiresAuth: false },
+        path: '/product',
+        name: 'Product',
         children: [
-          // {
-          //   path: 'login',
-          //   name: 'Login',
-          //   component: () => import('../views/auth/login.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'signup-as-an-applicant',
-          //   name: 'Register',
-          //   component: () => import('../views/auth/register.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'confirm-mail',
-          //   name: 'ConfirmMail',
-          //   component: () => import('../views/auth/confirmMail.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'signup-as-a-recruiter',
-          //   name: 'RegisterRecruiter',
-          //   component: () => import('../views/auth/register.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'forgot-password',
-          //   name: 'ForgotPassword',
-          //   component: () => import('../views/auth/forgotPassword.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'reset-password',
-          //   name: 'ResetPassword',
-          //   component: () => import('../views/auth/resetPassword.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-          // {
-          //   path: 'thank-you',
-          //   name: 'Thanks',
-          //   component: () => import('../views/auth/thankYou.vue'),
-          //   meta: { requiresAuth: false },
-          // },
-        ]
-      },
-      {
-        path : 'dashboard',
-        name: 'Dashboard',
-        meta: { requiresAuth: true },
-        children: [
-          // {
-          //   path: '',
-          //   name: 'Dashboard',
-          //   component: () => import('../views/dashboard/index.vue'),
-          //   meta: { requiresAuth: true },
-          // },
-          // {
-          //   path: 'jobs',
-          //   name: 'Job',
-          //   children: [
-          //     {
-          //       path: '',
-          //       name: 'Jobs',
-          //       component: () => import('../views/dashboard/jobs/index.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     {
-          //       path: 'view',
-          //       name: 'ViewJob',
-          //       component: () => import('../views/dashboard/jobs/view.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     // {
-          //     //   path: 'job-openings',
-          //     //   name: 'JobOpenings',
-          //     //   component: () => import('../views/dashboard/jobs/jobOpening.vue'),
-          //     //   meta: { requiresAuth: true },
-          //     // },
-          //     // {
-          //     //   path: 'job-openings/view',
-          //     //   name: 'ViewJobOpenings',
-          //     //   component: () => import('../views/dashboard/jobs/jobOpening.vue'),
-          //     //   meta: { requiresAuth: true },
-          //     // },
-          //   ]
-          // },
-          // {
-          //   path: 'profile',
-          //   name: 'Profile',
-          //   component: () => import('../views/dashboard/profile/index.vue'),
-          //   meta: { requiresAuth: true },
-          // },
-          // {
-          //   path: 'reports',
-          //   name: 'Report',
-          //   children: [
-          //     {
-          //       path: '',
-          //       name: 'Reports',
-          //       component: () => import('../views/dashboard/report/index.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     {
-          //       path: 'view',
-          //       name: 'ViewReport',
-          //       component: () => import('../views/dashboard/report/view.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     {
-          //       path: 'job-openings',
-          //       name: 'JobOpenings',
-          //       component: () => import('../views/dashboard/report/jobOpening.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     {
-          //       path: 'job-openings/view',
-          //       name: 'ViewJobOpenings',
-          //       component: () => import('../views/dashboard/report/jobOpening.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //   ]
-          // },
-          // {
-          //   path: 'referrals',
-          //   name: 'Referral',
-          //   children: [
-          //     {
-          //       path: '',
-          //       name: 'Referrals',
-          //       component: () => import('../views/dashboard/referrals/index.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //     {
-          //       path: 'view',
-          //       name: 'ViewReferral',
-          //       component: () => import('../views/dashboard/referrals/view.vue'),
-          //       meta: { requiresAuth: true },
-          //     },
-          //   ]
-          // },
+          {
+            path: 'details',
+            name: 'ProductDetails',
+            component: () => import('../views/Products/Details.vue'),
+            // meta: { requiresAuth: false },
+          },
         ]
       },
     ]
