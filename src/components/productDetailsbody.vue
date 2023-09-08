@@ -5,7 +5,6 @@
 </script>
 
 <script setup lang="ts">
-    import SvgIcons from './SvgIcons.vue';
 
     let rating:any = 4
     let topeRating:any = 5
@@ -35,39 +34,19 @@
                         <li class="list-disc">
                             Made with high-quality, lightweight and breathable fabric
                         </li>
-                        <li class="list-disc">
-                            Features a U-neckline, adjustable straps, and a flowy silhouette
-                        </li>
-                        <li class="list-disc">
-                            Comes in brown only.
-                        </li>
-                        <li class="list-disc">
-                            Perfect for summer events, beach vacations, and casual outings
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="mt-[50px] grid grid-cols-10">
                 <div class="col-span-4">
                     <p class="text-[15px] font-bold tracking-[5%] text-grey leading-[19px]">
-                        PRODUCT CARE:
+                        UNITS LEFT:
                     </p>
                 </div>
                 <div class="col-span-6">
-                    <ul class="text-primary font-light text-sm tracking-[5%] text-justify leading-[26px] pl-3">
-                        <li class="list-disc">
-                            Hand wash using cold water.
-                        </li>
-                        <li class="list-disc">
-                            Do not using bleach.
-                        </li>
-                        <li class="list-disc">
-                            Hang it to dry.
-                        </li>
-                        <li class="list-disc">
-                            Iron on low temperature.
-                        </li>
-                    </ul>
+                    <p>
+                        {{  }} 8
+                    </p>
                 </div>
             </div>
             <div class="mt-[50px] grid grid-cols-10">
