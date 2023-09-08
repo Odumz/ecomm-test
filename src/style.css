@@ -5,45 +5,61 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-      --color-primary: 0, 0%, 12.9%;
-      --color-primary-accent: 0, 0%, 40%;
-      --color-blue: 216, 100%, 48%;
-      --color-grey: 218, 15%, 59%;
-      --color-ash: 240, 2.5%, 84.3%;
-      --color-offwhite: 225, 100%, 99.2%;
-      --color-light-grey: 0, 0%, 94.5%;
-    }
+  :root {
+    --color-primary: 0, 0%, 12.9%;
+    --color-primary-accent: 0, 0%, 40%;
+    --color-blue: 216, 100%, 48%;
+    --color-grey: 218, 15%, 59%;
+    --color-ash: 240, 2.5%, 84.3%;
+    --color-offwhite: 225, 100%, 99.2%;
+    --color-light-grey: 0, 0%, 94.5%;
+  }
 }
 
-    h1, h2, h3, h4, h5, h6 {
-      @apply text-primary;
-    }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary;
+  }
 
-    h1 {
-      @apply text-[44px] font-bold leading-[55px] tracking-[3%];
-    }
+  h1 {
+    @apply text-[44px] font-bold leading-[55px] tracking-[3%];
+  }
 
-    h3 {
-      @apply font-bold text-[32px] leading-[40px] tracking-[3%] text-center capitalize;
-    }
+  h3 {
+    @apply font-bold text-[32px] leading-[40px] tracking-[3%] text-center capitalize;
+  }
 
-    h6 {
-      @apply text-[15px] leading-6 tracking-[3%] font-semibold;
-    }
+  h6 {
+    @apply text-[15px] leading-6 tracking-[3%] font-semibold;
+  }
 
-    p {
-      @apply text-primary-accent text-[15px] leading-6;
-    }
+  p {
+    @apply text-primary-accent text-[15px] leading-6;
+  }
 
-    button {
-      @apply bg-primary text-white px-[25px] flex items-center py-[14px] shadow-[0px_4px_35px_rgba(0,0,0,0.15)];
-    }
+  button {
+    @apply bg-primary text-white px-[25px] flex items-center py-[14px] shadow-[0px_4px_35px_rgba(0,0,0,0.15)];
+  }
 
-    .product-title {
-      @apply text-[13px] leading-4 tracking-[2%] font-bold text-primary-accent uppercase;
-    }
+  .product-title {
+    @apply text-[13px] leading-4 tracking-[2%] font-bold text-primary-accent uppercase;
+  }
 
-    .productCat-title {
-      @apply text-sm hover:text-[15px] transition-all duration-300 leading-[18px] font-semibold p-3 text-primary;
-    }
+  .productCat-title {
+    @apply text-sm hover:text-[15px] transition-all duration-300 leading-[18px] font-semibold p-3 text-primary;
+  }
+
+  .form-label {
+    @apply text-base mb-2 text-[#262626];
+  }
+
+  .input {
+    @apply relative flex items-center text-light-grey;
+  }
+
+  .input-field {
+    @apply flex w-full bg-transparent rounded text-base px-6 py-5 border text-black placeholder:opacity-50;
+  }
+
+  .error {
+    @apply absolute top-[72px] text-xs text-red-500;
+  }

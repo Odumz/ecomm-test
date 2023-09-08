@@ -33,8 +33,10 @@ export const useProductStore = defineStore('product', () =>{
         const newProduct:any = await addData(baseUrl, payload);
 
         if (newProduct?.status == 200) {
+            console.log(`the new product ${JSON.stringify(newProduct)}`)
             return newProduct;
         } else if (newProduct?.status == 400) {
+            console.log(`the new product ${JSON.stringify(newProduct)}`)
             return newProduct
         }
     }

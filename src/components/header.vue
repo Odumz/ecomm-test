@@ -1,19 +1,24 @@
 <script lang="ts">
+    import { Ref, ref } from 'vue'
 	export default {
 	name: 'Header',
 	}
 </script>
 
 <script setup lang="ts">
-	import { useRouter } from 'vue-router';
     import SvgIcon from './SvgIcons.vue';
     import Search from './Search.vue';
+    import modal from '../components/modal.vue';
+    import AddProduct from '../components/addProduct.vue';
 
-const router:any = useRouter();
+    const showAddProduct:Ref<boolean> = ref(false);
 
-const goto:any = async () => {
-    router.push({path: '/cart'})
-}
+    const emits = defineEmits(['close']);
+
+    const hideModal:any = () => {
+        showAddProduct.value = false;
+        emits('close')
+    }
 </script>
 
 <template>
@@ -62,10 +67,13 @@ const goto:any = async () => {
                         <img src="../assets/profile1.png" alt="user profile image" class="w-9 h-9 rounded-full border-2 border-white" />
                     </div>
                 </div>
-                <div class="cart ">
-                    <div @click.prevent="goto" class="rounded-full flex items-center justify-center border w-9 h-9 text-primary-accent text-lg">
-                        <SvgIcon name="cart" />
-                    </div>
+                <div class="add-product_btn">
+                    <button class="btn btn-secondary_green btn_edit" @click.prevent="showAddProduct = true">
+                        Add Product
+                    </button>
+                    <modal :show="showAddProduct" @close="hideModal" className="w-3/4 right-0" containerClassName="justify-end">
+                        <AddProduct @close="hideModal" />
+                    </modal>
                 </div>
             </div>
         </div>
