@@ -5,8 +5,8 @@
 </script>
 
 <script setup lang="ts">
-    import ProductDetails from '../../components/productDetails.vue';
-    import detailsBody from '../../components/productDetailsbody.vue';
+    import ProductDetails from '../components/productDetails.vue';
+    import detailsBody from '../components/productDetailsbody.vue';
 </script>
 
 <template>

@@ -57,7 +57,7 @@ watch(
         >
             <div
                 ref="modal-backdrop"
-                class="fixed z-10 inset-0 overflow-y-auto bg-rezumii-black-100 bg-opacity-20"
+                class="fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-30"
                 v-show="showModal"
             >
               <svg v-if="showCancelButton" @click="close" class="cursor-pointer text-red-800 relative top-[20vh] -right-[93vw]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
