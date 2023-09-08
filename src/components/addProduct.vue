@@ -113,21 +113,22 @@
     if (response?.status > 399) {
       Swal.fire({
         title: 'Error!',
-        text: response,
+        text: response.message.data,
         icon: 'error',
-        confirmButtonText: 'Close'
-      })
-      setTimeout(() => {
-          isLoading.value = false;
-      }, 3000);
-    } else if (response?.status == 200) {
-      Swal.fire({
-        title: 'Success!',
-        text: response,
-        icon: 'success',
-        confirmButtonText: 'Close'
+        confirmButtonText: 'Close',
+        timer: 2500
       })
       isLoading.value = false;
+    } else {
+      Swal.fire({
+        title: 'Success!',
+        text: 'Product added successfully',
+        icon: 'success',
+        confirmButtonText: 'Close',
+        timer: 2500
+      })
+      isLoading.value = false;
+      emits('close')
     }
   }
 </script>

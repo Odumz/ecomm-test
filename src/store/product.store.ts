@@ -31,12 +31,12 @@ export const useProductStore = defineStore('product', () =>{
 
     const AddProduct:any = async (payload:any) => {
         const newProduct:any = await addData(baseUrl, payload);
+        console.log(`the new product ${JSON.stringify(newProduct)}`)
 
-        if (newProduct?.status == 200) {
-            console.log(`the new product ${JSON.stringify(newProduct)}`)
-            return newProduct;
+        if (!newProduct) {
+            const message:any = `Product created successfully`
+            return message;
         } else if (newProduct?.status == 400) {
-            console.log(`the new product ${JSON.stringify(newProduct)}`)
             return newProduct
         }
     }
